@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lin-Sight Dynamics | Senior Dynamics 365 & Power Platform Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#F5F3FF',   /* Soft Lavender Background */
+                            100: '#E0DBFC',  /* Accent Lavenders for borders */
+                            200: '#C7BDFA',  /* Deep Lavender for card outlines */
+                            600: '#2E1065',  /* Dominant Deep Purple */
+                            700: '#FACC15',  /* Vibrant Accent Yellow */
+                            800: '#1D4ED8',  /* Secondary Trust Blue for alternative elements */
+                            900: '#A7F3D0',  /* Mint Green Accent */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-brand-50 text-slate-800 font-sans antialiased">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-brand-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center">
+    		<a href="#" class="h-24 flex items-center py-1" aria-label="Lin-Sight Dynamics Home">
+       			 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" class="h-24 w-auto">
+                      <defs>
+                        <linearGradient id="laserGradient" x1="0%" y1="60%" x2="100%" y2="40%">
+                          <stop offset="0%" stop-color="#A498C4" />
+                          <stop offset="30%" stop-color="#D1BBF9" />
+                          <stop offset="38%" stop-color="#A498C4" /> 
+                          <stop offset="42%" stop-color="#B8F4D8" />
+                          <stop offset="48%" stop-color="#D1BBF9" />
+                          <stop offset="54%" stop-color="#B8F4D8" />
+                          <stop offset="100%" stop-color="#B8F4D8" />
+                        </linearGradient>
+                      </defs>
+                      <rect width="100%" height="100%" fill="transparent" />
+                      <g transform="translate(40, 20)">
+                        <polygon points="120,66 132,82 120,98 108,82" fill="#FACC15" />
+                        <path d="M 120,112 L 120,200 L 500,200" 
+                              fill="none" 
+                              stroke="url(#laserGradient)" 
+                              stroke-width="12" 
+                              stroke-linecap="square" 
+                              stroke-linejoin="miter" />
+                        <polygon points="496,185 521,200 496,215 506,200" fill="#B8F4D8" />
+                        <text x="145" y="182" 
+                              font-family="system-ui, -apple-system, sans-serif" 
+                              font-size="96" 
+                              font-weight="630" 
+                              fill="#2E1065" 
+                              letter-spacing="2">NSIGHT</text>
+                        <text x="328" y="252" 
+                              font-family="system-ui, -apple-system, sans-serif" 
+                              font-size="44" 
+                              font-weight="700" 
+                              fill="#2E1065" 
+                              text-anchor="middle"
+                              letter-spacing="23">DYNAMICS</text>
+                      </g>
+                    </svg>
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-brand-600">
+                <a href="#about" class="hover:text-brand-700 transition">About</a>
+                <a href="#smb-services" class="hover:text-brand-700 transition">Small Business Solutions</a>
+                <a href="#enterprise-portfolio" class="hover:text-brand-700 transition">Enterprise Contracting</a>
+                <a href="#contact" class="hover:text-brand-700 transition">Contact</a>
+            </nav>
+            <div>
+                <a href="#contact" class="inline-flex items-center justify-center px-4 py-2 text-sm font-bold text-brand-600 bg-brand-700 hover:bg-yellow-400 rounded-lg transition duration-200">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative bg-gradient-to-b from-white to-brand-50 py-20 lg:py-28 overflow-hidden border-b border-brand-100">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 text-brand-600 mb-6">
+                Microsoft Business Applications & AI Specialist
+            </span>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-black text-brand-600 tracking-tight max-w-4xl mx-auto leading-tight">
+                Enterprise-Grade Microsoft Solutions.<br class="hidden md:inline">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-900">Tailored for Your Scale.</span>
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                Senior Dynamics 365 and Power Platform expertise delivered directly to your project. Whether you are a growing business automating operations or an enterprise team seeking an elite contractor, get seamless execution without the agency overhead.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#smb-services" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-brand-600 bg-brand-700 hover:bg-yellow-400 rounded-xl shadow-lg shadow-yellow-500/10 transition-all duration-200">
+                    I'm a Business Owner Looking to Scale
+                </a>
+                <a href="#enterprise-portfolio" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-brand-600 bg-white hover:bg-brand-50 border border-brand-200 rounded-xl shadow-sm transition-all duration-200">
+                    I'm a Recruiter / Enterprise Partner
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white border-b border-brand-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-brand-600 tracking-tight">The Power of Senior-Level Direct Partnership</h2>
+                <p class="mt-3 text-slate-600 leading-relaxed">
+                    By bypassing the corporate agency model, you partner directly with a functional expert who owns the entire software lifecycle—bringing strategic alignment, custom builds, and rapid deployments without the layers of overhead.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-brand-50/50 rounded-xl border border-brand-100">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-600 mb-2">Dynamics 365 Architecture</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Tailoring Microsoft's first-party apps (Sales, Customer Service) to map perfectly to your actual operational workflows.</p>
+                </div>
+                <div class="p-6 bg-brand-50/50 rounded-xl border border-brand-100">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-600 mb-2">Custom Power Apps</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Designing custom low-code tools and automated pipelines using Power Automate and modern AI integrations to replace spreadsheets.</p>
+                </div>
+                <div class="p-6 bg-brand-50/50 rounded-xl border border-brand-100">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-600 mb-2">End-to-End SDLC Delivery</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Managing everything from process mapping and Functional Design Documents (FDD) to configurations, developer hand-offs, and final training.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="smb-services" class="py-20 bg-brand-50/40 border-b border-brand-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <span class="text-brand-600 font-bold tracking-wider text-xs uppercase">Small Business Solutions</span>
+                <h2 class="text-3xl md:text-4xl font-black text-brand-600 mt-2 tracking-tight">Stop Fighting Your Software. Start Automating.</h2>
+                <p class="mt-4 text-slate-600 leading-relaxed">
+                    Traditional IT consultancies either ignore small businesses or assign them to entry-level teams. I offer senior-level technical execution specifically crafted for small teams looking to eliminate administrative friction.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-brand-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-brand-600 mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-brand-900"></span> Ditch the Messy Spreadsheets
+                    </h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Centralize customer records, opportunities, and historical data inside a secure, custom-tailored Microsoft workspace that acts as a single source of truth for your business.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><span class="text-brand-900 font-bold">✔</span> Unified contacts, activities, and files</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-900 font-bold">✔</span> Configured specifically for your business pipelines</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-900 font-bold">✔</span> Seamless Outlook, Teams, and Excel syncing</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-brand-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-brand-600 mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-brand-900"></span> Put Manual Work on Autopilot
+                    </h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Eliminate double data entry, manual email notifications, and document generation using Power Automate workflows and customized AI assistants.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><span class="text-brand-900 font-bold">✔</span> Auto-generate proposals, invoices, and documents</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-900 font-bold">✔</span> Instantly trigger emails and task follow-ups</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-900 font-bold">✔</span> Embed intelligent AI tools inside your daily workflows</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center bg-brand-600 text-white p-8 md:p-12 rounded-2xl shadow-xl">
+                <h4 class="text-xl md:text-2xl font-bold text-brand-50">Ready to modernize your operations?</h4>
+                <p class="mt-2 text-brand-100 text-sm md:text-base max-w-xl mx-auto">Let’s schedule a brief 15-minute consultation to identify your biggest technical bottleneck and map out a clean path forward.</p>
+                <a href="#contact" class="mt-6 inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-brand-600 bg-brand-700 hover:bg-yellow-400 rounded-lg transition">Schedule Your Tech Strategy Call</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="enterprise-portfolio" class="py-20 bg-white border-b border-brand-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <span class="text-brand-600 font-bold tracking-wider text-xs uppercase">Enterprise & Agency Partnering</span>
+                <h2 class="text-3xl md:text-4xl font-black text-brand-600 mt-2 tracking-tight">Independent Contract & Delivery Expert</h2>
+                <p class="mt-4 text-slate-600 leading-relaxed">
+                    Need a highly capable resource to step directly into an ongoing project and lead the functional landscape from day one? I offer plug-and-play consulting expertise across the full SDLC.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <div class="p-6 bg-brand-50/30 rounded-xl border border-brand-100">
+                    <h3 class="font-bold text-brand-600 mb-3 text-lg">Rigorous SDLC Mastery</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Experienced in leading requirements gathering sessions, organizing robust Fit-Gap analyses, authoring clear Functional Design Documents (FDD), and executing precise configuration.</p>
+                </div>
+                <div class="p-6 bg-brand-50/30 rounded-xl border border-brand-100">
+                    <h3 class="font-bold text-brand-600 mb-3 text-lg">Technical Developer Liaison</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">I design the functional architectures and coordinate directly with specialized developers for any custom C# plugins, custom APIs, or complex custom system extensions.</p>
+                </div>
+                <div class="p-6 bg-brand-50/30 rounded-xl border border-brand-100">
+                    <h3 class="font-bold text-brand-600 mb-3 text-lg">Quality Assurance & Go-Live</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Managing user acceptance testing (UAT), scripting reliable test scenarios, building user training guides, and coordinating low-friction go-live deployments.</p>
+                </div>
+            </div>
+
+            <div class="border-t border-brand-100 pt-16">
+                <h3 class="text-2xl font-bold text-brand-600 mb-8 text-center">Selected Delivery Portfolio (Representative Work)</h3>
+                
+                <div class="space-y-6">
+                    <div class="p-6 bg-brand-50/30 rounded-xl border border-brand-100">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                            <h4 class="font-bold text-brand-600 text-lg">Dynamics 365 Customer Service & Custom Portal</h4>
+                            <span class="self-start px-3 py-1 bg-brand-100 text-brand-600 rounded-full text-xs font-semibold">Professional Services Industry</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                            Designed and configured an end-to-end customer onboarding portal. Led the functional configuration, mapped standard support processes, structured case pipelines, and managed custom integrations with a developer for background C# plugins.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-brand-600">
+                            <span>#Dynamics365</span> <span>#PowerAppsPortal</span> <span>#PowerAutomate</span> <span>#SDLC</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-brand-50/30 rounded-xl border border-brand-100">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                            <h4 class="font-bold text-brand-600 text-lg">Power Apps Inventory & Asset Allocation App</h4>
+                            <span class="self-start px-3 py-1 bg-brand-100 text-brand-600 rounded-full text-xs font-semibold">Logistics & Supply Chain Client</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                            Replaced a highly manual, error-prone spreadsheet model with a custom low-code canvas Power App for field operations. Fully configured data structures in Dataverse, automated approvals, and orchestrated rapid deployment with minimal downtime.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-brand-600">
+                            <span>#Dataverse</span> <span>#PowerAppsCanvas</span> <span>#ProcessAutomation</span> <span>#FDD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-brand-50/40">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black text-brand-600 tracking-tight">Let's Discuss Your Project</h2>
+                <p class="mt-3 text-slate-600">Whether you seek direct small business optimization or a professional contract resource, submit a quick brief below.</p>
+            </div>
+
+            <div class="bg-white p-8 md:p-10 rounded-2xl border border-brand-100 shadow-lg">
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+    <input type="hidden" name="access_key" value="8aa8ef6e-e473-4278-a131-e433a1426629">
+
+    <input type="hidden" name="redirect" value="https://www.linsightdynamics.com">
+
+    <div class="grid md:grid-cols-2 gap-6">
+        <div>
+            <label class="block text-sm font-semibold text-slate-700 mb-2">Your Name</label>
+            <input type="text" name="name" class="w-full px-4 py-3 border border-brand-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-transparent transition bg-brand-50/20" placeholder="e.g. Alex" required>
+        </div>
+        <div>
+            <label class="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
+            <input type="email" name="email" class="w-full px-4 py-3 border border-brand-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-transparent transition bg-brand-50/20" placeholder="e.g. alex@company.com" required>
+        </div>
+    </div>
+
+    <div>
+        <label class="block text-sm font-semibold text-slate-700 mb-2">How can I help you?</label>
+        <select name="help_type" class="w-full px-4 py-3 border border-brand-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-transparent transition bg-white" required>
+            <option value="">Select an option</option>
+            <option value="smb">I need small business automation & tools</option>
+            <option value="contract">I am looking to hire a contract resource</option>
+            <option value="other">General Inquiry / Partnership</option>
+        </select>
+    </div>
+
+    <div>
+        <label class="block text-sm font-semibold text-slate-700 mb-2">Project Details</label>
+        <textarea name="message" class="w-full h-32 px-4 py-3 border border-brand-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-transparent transition bg-brand-50/20" placeholder="Describe your current processes, challenges, or the target scope..." required></textarea>
+    </div>
+
+    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-4 text-base font-bold text-brand-600 bg-brand-700 hover:bg-yellow-400 rounded-xl transition shadow-lg shadow-yellow-500/10">
+        Send Secure Message
+    </button>
+</form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-600 text-brand-100 py-12 border-t border-brand-600">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <span class="text-xl font-black text-white tracking-tight">Lin-Sight Dynamics</span>
+                <p class="text-xs mt-1 text-brand-100/75">Professional Microsoft Solutions Delivery & Business Systems Design.</p>
+            </div>
+            <div class="flex items-center gap-6 text-sm">
+                <a href="https://www.linkedin.com/in/jiajialinsightdynamics/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">LinkedIn</a>
+                <span class="text-brand-100/50">|</span>
+                <span class="text-brand-100/75">British Columbia, Canada</span>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-8 pt-8 border-t border-brand-200/20 text-center text-xs text-brand-100/50">
+            &copy; 2026 Lin-Sight Dynamics. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
